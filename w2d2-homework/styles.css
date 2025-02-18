@@ -1,0 +1,345 @@
+/* Header */
+header {
+    width: 100%;
+    min-height: 400px;
+    padding-top: 3em;
+}
+
+#home header {
+    background: no-repeat lightgrey url(images/cliff_ocean.jpg);
+    background-size: 1500px;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    width: 700px;
+    margin: 2em auto 0 auto; /* Centers the navbar */
+    min-height: 100px;
+    height: 100px;
+    border-radius: 5px; /* Optional: adds slight rounded corners */
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ensures elements stay properly spaced */
+}
+
+/* Fix the Container Padding to Align Content */
+.container {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+/* Adjust Logo Alignment */
+.navbar-brand {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+    display: flex;
+    align-items: center; /* Ensures vertical alignment */
+}
+
+
+/* Logo */
+.navbar-brand img {
+    width: 100px;
+    height: 100px;
+    margin-right: 2em;
+}
+
+/* Navigation Links */
+.navbar-nav .nav-item {
+    padding: 0 25px; /* Match original spacing */
+    line-height: 84px; /* Aligns text vertically */
+    border-left: 1px solid rgba(202, 204, 202, 0.6);
+}
+
+.navbar-nav .nav-item:first-child {
+    border-left: none; /* Remove border from the first menu item */
+}
+
+.navbar-nav .nav-link {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #888 !important;
+    font-weight: 400;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.navbar-nav .nav-link:hover {
+    color: #9ed034 !important;
+}
+
+/* Active Page Styling */
+.navbar-nav .nav-item.active {
+    background: #9ed034;
+}
+
+.navbar-nav .nav-item.active .nav-link {
+    color: white !important;
+}
+
+/* Navbar Toggle Button (Hamburger) */
+.navbar-toggler {
+    border: none;
+    outline: none;
+}
+
+/* Keep Logo and Toggle Button Aligned */
+.navbar-brand,
+.navbar-toggler {
+    display: flex;
+    align-items: center;
+    height: 100px; /* Ensures they stay within navbar height */
+}
+
+/* Adjust Toggle Button (Hamburger) Alignment */
+.navbar-toggler {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0; /* Ensure consistent spacing */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px; /* Make sure it's properly centered */
+}
+
+
+
+
+/* Main */
+main {
+    padding: 3em 6em 3em 5.5em;
+    margin: 2em 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+main h1 {
+    font-size: 2.5em;
+    padding-bottom: 0.5em;
+    color: #9ed034;
+}
+main h2 {
+    font-size: 1.7em;
+}
+
+/* Partners */
+section {
+    width: 100%;
+    background-color: #4288C3;
+}
+section #partners {  
+    width: 1200px;
+    padding: 2em 0 2em 0;
+    margin: 0 auto;
+    text-align: center;
+}
+section #partners .partner {
+    display: inline-block;
+    margin: 0 0.75em;
+    padding: 1.3em 1.5em;
+    background-color: #fff;
+    border-radius: 50%;
+}
+section #partners .partner img {
+    width: 90px;
+    height: 90px;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    height: 155px;
+    padding-bottom: 1em;
+    background-color: #ecfab8;
+}
+footer #nondisclaimer .copy {
+    padding: 3.5em 3.5em 3.5em 13em;
+    float: left;
+    font-size: 0.9em;
+}
+footer #nondisclaimer .social {
+    padding: 2.5em;
+    margin-right: 9.25em;
+    float: right;
+}
+footer #disclaimer {
+    clear: both;
+}
+
+footer #disclaimer p {
+    font-size: 0.85em;
+    text-align: center;
+}
+footer #nondisclaimer .social .fa {
+    padding: 15px;
+    font-size: 15px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 4px;
+    border-radius: 50%;
+}
+footer #nondisclaimer .social .fa:hover {
+    opacity: 0.7;
+}
+footer #nondisclaimer .social .fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+    
+footer #nondisclaimer .social .fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+footer #nondisclaimer .social .fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+/* Home */
+
+
+
+/* ACTIVATE BELOW WHEN TESTING NAVIGATION AND OTHERS FOR RWD */
+
+/* Media Queries */
+/*@media (max-width: 768px) {
+    footer #nondisclaimer .copy {
+        padding: 3.5em 0em 3.5em 0em;
+        text-align: center;
+        float: none;
+        font-size: 0.9em;
+      }
+      footer #nondisclaimer .social {
+        padding: 2.5em 0;
+        margin: 0;
+        text-align: center;
+        float: none;
+      }
+}
+
+@media (max-width: 992px) {
+    .logo img {
+        position: relative;
+        bottom: 8px;
+    }
+    .main-menu {
+        width: 200px;
+        background-color:rgb(255, 255, 255);
+        position: absolute;
+        right: 1.7em;
+      }
+      .main-menu ul li {
+        border-bottom: 1px solid rgba(202, 204, 202, 0.6);
+      }
+      main {
+        padding: 3em 1em 3em 1em;
+        margin: 0;
+      }
+      #home .main-col-content {
+        padding: 25px;
+        min-height: 450px;
+        margin-top: 1em;
+      }
+} */
+
+/* Ensure Collapsed Menu Doesn't Shift */
+/* Medium Screens (768px - 991px) */
+@media (max-width: 991px) {
+    .navbar {
+        width: 60%; /* Reduce width to 60% of screen */
+        height: 100px; /* Keep height consistent */
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .navbar-brand {
+        padding-left: 15px; /* Keep consistent left spacing */
+    }
+
+    .navbar-toggler {
+        margin-right: 15px; /* Adjust position */
+        height: 40px;
+    }
+
+    .navbar-collapse {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+
+/* Small Screens (576px - 767px) */
+@media (max-width: 767px) {
+    .navbar {
+        width: 80%; /* Reduce width further */
+        height: 80px; /* Reduce height slightly */
+        padding: 0 10px;
+    }
+
+    .navbar-brand {
+        padding-left: 5px; /* Reduce spacing */
+    }
+
+    .navbar-toggler {
+        position: absolute;
+        right: 10px; /* Lock to right */
+        top: 50%;
+        transform: translateY(-50%); /* Keep it centered */
+        height: 40px;
+    }
+}
+
+/* Extra Small Screens (< 576px) */
+@media (max-width: 575px) {
+    .navbar {
+        width: 90%; /* Prevent full width */
+        height: 70px; /* Adjust height */
+        padding: 0 5px;
+    }
+
+    .navbar-brand img {
+        width: 80px; /* Reduce logo size for very small screens */
+        height: 80px;
+    }
+
+    .navbar-toggler {
+        right: 5px; /* Adjust position */
+        height: 35px; /* Reduce toggler size */
+    }
+}
+
+/* Customize the Mobile Dropdown Menu */
+@media (max-width: 991px) {
+    .navbar-collapse {
+        width: 200px !important; /* Set dropdown width */
+        background: rgba(255, 255, 255, 0.9); /* Slight transparency */
+        border-radius: 5px; /* Add rounded corners */
+        position: absolute;
+        right: 10px; /* Align to the right */
+        top: 100%; /* Position below the navbar */
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for better visibility */
+    }
+
+    .navbar-nav {
+        display: block;
+        width: 100%;
+    }
+
+    .navbar-nav .nav-item {
+        width: 100%;
+        text-align: left; /* Align text inside */
+        border: none; /* Remove borders */
+        padding: 10px 15px; /* Adjust spacing */
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 14px;
+        padding: 10px 15px; /* Adjust padding */
+    }
+}
+
+
