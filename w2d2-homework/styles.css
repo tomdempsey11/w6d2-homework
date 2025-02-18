@@ -424,12 +424,13 @@ main.content-container {
         width: 100%;
         text-align: left; /* Align text inside */
         border: none; /* Remove borders */
-        padding: 10px 15px; /* Adjust spacing */
+        padding: 5px 0; /* Reduce vertical padding */
     }
 
     .navbar-nav .nav-link {
         font-size: 14px;
-        padding: 10px 15px; /* Adjust padding */
+        padding: 8px 10px; /* Adjust padding */
+        line-height: 4;
     }
 }
 
@@ -444,3 +445,7 @@ main.content-container {
         flex-direction: column;
     }
 }
+
+
+
+
