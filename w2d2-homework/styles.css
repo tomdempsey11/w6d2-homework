@@ -46,6 +46,8 @@ header {
 .navbar-brand img {
     width: 100px;
     height: 100px;
+    min-width: 100px;
+    min-height: 100px;
     margin-right: 2em;
 }
 
@@ -114,16 +116,50 @@ header {
 main {
     padding: 3em 6em 3em 5.5em;
     margin: 2em 0;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
 main h1 {
     font-size: 2.5em;
     padding-bottom: 0.5em;
     color: #9ed034;
+    text-align: center;
 }
+
 main h2 {
     font-size: 1.7em;
 }
+
+/* Ensure main content is centered without affecting navbar */
+main.content-container {
+    max-width: 900px !important; /* Ensure Bootstrap doesn't override */
+    margin: 0 auto !important; /* Force centering */
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+/* Style for content blocks */
+.content-block {
+    padding: 20px;
+    text-align: justify;
+    border: 1px solid #ccc; /* Adds a thin border */
+    border-radius: 5px; /* Rounds corners slightly */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /* Adds subtle shadow */
+    background-color: #fff; /* Ensures a white background */
+    margin-bottom: 10px; /* Adds spacing when stacked */
+}
+
+
+/* Center the <h2> inside each block */
+.content-block h2 {
+    text-align: center;
+    margin-bottom: 15px; /* Adds spacing below the heading */
+}
+
+
+
+
+
 
 /* Partners */
 section {
@@ -343,3 +379,13 @@ footer #nondisclaimer .social .fa-instagram {
 }
 
 
+
+/* Ensure content blocks take 90% width in two-column layout */
+@media (min-width: 768px) {
+    .content-block {
+        width: 100%; /* Each block takes 90% of its column */
+        margin: 0 auto; /* Centers the blocks within their columns */
+        display: flex;
+        flex-direction: column;
+    }
+}
