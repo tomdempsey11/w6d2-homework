@@ -10,7 +10,14 @@ header {
     background-size: cover;
     background-position: center;
     height: 50vh;
+    position: relative;
+    margin-bottom: -400px;
 }
+
+#home main.content-container {
+    margin-top: 300px !important;
+}
+
 
 
 #cliffs header {
@@ -18,6 +25,12 @@ header {
     background-size: cover;
     background-position: center;
     height: 50vh;
+    position: relative;
+    margin-bottom: -400px;
+}
+
+#cliffs main {
+    margin-top: 300px;
 }
 
 #activities header {
@@ -25,6 +38,12 @@ header {
     background-size: cover;
     background-position: top center;
     height: 50vh;
+    position: relative;
+    margin-bottom: -400px;
+}
+
+#activities main {
+    margin-top: 300px;
 }
 
 #contact header {
@@ -32,27 +51,33 @@ header {
     background-size: cover;
     background-position: top center;
     height: 50vh;
+    position: relative;
+    margin-bottom: -400px;
 }
-
-
-  
 
 /* Navbar Styles */
 .navbar {
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    background-color: rgba(38, 41, 61, 0.7) !important;
     width: 700px;
-    margin: 2em auto 0 auto; /* Centers the navbar */
+    margin: 2em auto 0 auto; /* Keeps the vertical margin from the top */
     min-height: 100px;
     height: 100px;
-    border-radius: 5px; /* Optional: adds slight rounded corners */
+    border-radius: 5px;
     padding-left: 0 !important;
     padding-right: 0 !important;
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Ensures elements stay properly spaced */
+    justify-content: space-between;
+    /* Remove any position: relative and top offsets from here */
 }
 
-/* Fix the Container Padding to Align Content */
+/* Custom navigation overlay */
+.custom-nav {
+    /* Use transform instead of negative margin or top offset */
+    /*transform: translateY(-400px);*/
+}
+
+/* The rest of your navbar styles remain unchanged */
 .container {
     margin-left: 0;
     margin-right: 0;
@@ -60,16 +85,13 @@ header {
     padding-right: 0 !important;
 }
 
-/* Adjust Logo Alignment */
 .navbar-brand {
     margin-left: 0 !important;
     padding-left: 0 !important;
     display: flex;
-    align-items: center; /* Ensures vertical alignment */
+    align-items: center;
 }
 
-
-/* Logo */
 .navbar-brand img {
     width: 100px;
     height: 100px;
@@ -78,31 +100,28 @@ header {
     margin-right: 2em;
 }
 
-/* Navigation Links */
 .navbar-nav .nav-item {
-    padding: 0 25px; /* Match original spacing */
-    line-height: 84px; /* Aligns text vertically */
+    padding: 0 25px;
+    line-height: 84px;
     border-left: 1px solid rgba(202, 204, 202, 0.6);
 }
 
 .navbar-nav .nav-item:first-child {
-    border-left: none; /* Remove border from the first menu item */
+    border-left: none;
 }
 
 .navbar-nav .nav-link {
     font-size: 14px;
     text-transform: uppercase;
-    color: #888 !important;
+    color: rgb(255, 255, 255) !important;
     font-weight: 400;
     transition: color 0.3s ease-in-out;
 }
 
-/* Hover effect */
 .navbar-nav .nav-link:hover {
     color: #9ed034 !important;
 }
 
-/* Active Page Styling */
 .navbar-nav .nav-item.active {
     background: #9ed034;
 }
@@ -111,35 +130,40 @@ header {
     color: white !important;
 }
 
-/* Navbar Toggle Button (Hamburger) */
 .navbar-toggler {
     border: none;
     outline: none;
 }
 
-/* Keep Logo and Toggle Button Aligned */
 .navbar-brand,
 .navbar-toggler {
     display: flex;
     align-items: center;
-    height: 100px; /* Ensures they stay within navbar height */
+    height: 100px;
 }
 
-/* Adjust Toggle Button (Hamburger) Alignment */
 .navbar-toggler {
     margin-top: 0;
     margin-bottom: 0;
-    padding: 0; /* Ensure consistent spacing */
+    padding: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 40px; /* Make sure it's properly centered */
+    height: 40px;
 }
 
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background-color: rgba(38, 41, 61, 0.7) !important;
+    }
+  }
+  
 
 
 
 /* Main */
+
+
 main {
     padding: 3em 6em 3em 5.5em;
     margin: 2em 0;
@@ -182,6 +206,8 @@ main.content-container {
     text-align: center;
     margin-bottom: 15px; /* Adds spacing below the heading */
 }
+
+
 
 
 
@@ -477,6 +503,8 @@ main.content-container {
 
 /*Cliff Photos - Cliff Page*/
 
+
+
 /* Centering Container */
 .center-container {
     display: flex;
@@ -698,4 +726,211 @@ td:first-child {
 }
 #activities main #displaySelected #sendinfo input[type="email"] {
     width: 200px;
+}
+
+
+
+/* Contact Main */
+/* General styles for the main content */
+#contact main {
+    font-family: Arial, Arial, Helvetica, sans-serif;
+    color: #333;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 100px;
+    line-height: 1.6;
+    margin-top: 300px;
+}
+
+
+
+/* Title style */
+#contact main h1 {
+    position: relative;
+    background-color: #fff; /* Matches form background */
+    padding: 0 0px; /* Add padding to maintain spacing */
+    display: inline-block; /* Shrink background to fit text */
+    z-index: 1; /* Ensure it appears above the form border */
+    color: #9ed034; 
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#contact main p {
+    font-size: 18px;
+    font-weight:100;
+}
+
+/* Contact information section */
+.contactinfo {
+    margin-bottom: 20px;
+}
+
+.contactinfo div {
+    margin: 5px 0;
+}
+
+.contactinfo span:first-child {
+    font-weight: bold;
+    color: black; 
+    font-size: 18px;
+}
+
+.contactinfo span:second-child {
+    color: black; 
+    font-size: 14px;
+}
+
+/* Form container styling */
+form {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff; /* White background for form */
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Fieldset and legend styles */
+fieldset {
+    border: 2px solid #9ed034; /* Lime green outline */
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff; /* Optional: White background for form */
+    margin: 0; /* Align with form */
+}
+
+legend {
+    color: #4977D1; /* Smooth blue color */
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 10px; /* Optional: Slight spacing from the left */
+    padding: 0 10px; /* Add spacing around the text */
+    background-color: #fff; /* Match the background color */
+    border-radius: 4px; /* Optional: Smooth border for legend */
+    line-height: 1.5; /* Center vertically */
+}
+
+
+/* Input fields, textareas, and select boxes */
+input[type="text"], input[type="email"], textarea, select {
+    width: 50%;
+    padding: 8px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Style for textareas */
+textarea {
+    resize: vertical;
+    height: 80px;
+}
+
+.radios {
+    display: flex; /* Flexbox layout for horizontal alignment */
+    align-items: center; /* Vertically center-align question and options */
+    margin-bottom: 15px;
+}
+
+.radios label {
+    margin-right: 15px; /* Add spacing between the question and the options */
+}
+
+.radio-options {
+    display: flex; /* Ensure radio buttons are horizontally aligned */
+    gap: 15px; /* Add spacing between each radio button and its label */
+}
+
+.radio-options label {
+    display: flex; /* Use flexbox to align the button and label horizontally */
+    align-items: center; /* Vertically align the radio button with the text */
+    gap: 5px; /* Add spacing between the button and the label text */
+    margin: 0; /* Remove any extra margins */
+}
+
+
+.radio-options input {
+    margin-right: 5px; /* Space between the button and its text */
+}
+
+
+/* Select menu style */
+.selectmenu {
+    margin-bottom: 15px;
+}
+
+/* Submit button style */
+/* Ensure the button container aligns properly */
+form .button {
+    display: flex; /* Enables flexible alignment */
+    justify-content: flex-end; /* Aligns the button to the right */
+    width: 50%; /* Ensures the container spans the form width */
+    margin-top: 80px; /* Optional: Add space above the button */
+}
+
+/* Submit button style */
+form .button input[type="submit"] {
+    background-color: #4977D1; /* Smooth blue */
+    color: #fff; /* White text */
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+/* Hover effect for the submit button */
+form .button input[type="submit"]:hover {
+    background-color: #375b9b; /* Darker blue on hover */
+}
+
+
+/* Align all elements to the left */
+form label, input, textarea, select {
+    text-align: left;
+    display: block;
+    margin-bottom: 10px; /* Add consistent spacing below form elements */
+}
+
+/* Margin between sections */
+form .textbox, .radios, .selectmenu, .commentbox, .button {
+    margin-bottom: 20px;
+}
+
+/* Ensure the form is the positioned container */
+form {
+    position: relative;
+}
+
+/* Position .randomcode so its right edge aligns with the 50% mark of the form */
+.randomcode {
+    position: absolute;
+    bottom: 120px;      /* Adjust as needed */
+    left: 52%;         /* Start at the 50% mark of the form */
+    transform: translateX(-100%);  /* Shift it left so that its right edge is at left: 50% */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Optional styling for the random code elements */
+.randomcode input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.randomcode #codes {
+    display: inline-block;    /* Makes the element behave like a box */
+    padding: 8px 12px;        /* Adds space inside the box */
+    border: 1px solid #4977D1;/* Gives the box a border with the same blue color */
+    border-radius: 4px;       /* Rounds the corners of the box */
+    background-color: #f9f9f9;/* Optional: light background color for contrast */
+    font-size: 16px;
+    font-weight: bold;
+    color: #4977D1;
+    margin: 0;
 }
