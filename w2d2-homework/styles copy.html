@@ -1,0 +1,592 @@
+        /*Header*/
+        header{
+            width: 100%;
+            min-height: 400px;
+            padding-top: 3em;
+        }
+        #home header {
+            background: no-repeat lightgrey url(images/cliff_ocean.jpg);
+            background-size: 1500px;
+        }
+
+        #activities header {
+            background: no-repeat lightgrey url(images/runfly.jpg);
+            background-size: 1500px;
+        }
+
+        #contact header {
+            background: no-repeat lightgrey url(images/cliff_rock.jpg);
+            background-size: 1500px;
+        }
+
+        #cliffs header {
+            background: no-repeat lightgrey url(images/forest_cliff.jpg);
+            background-size: 1500px;
+        }
+
+        /*Navigation*/
+        .main-header {
+            background-color:rgb(255, 255, 255, 0.8);
+            width: 700px;
+            margin: 2em auto 0 auto;
+            min-height: 100px;
+            height: 100px;
+        }
+        .main-header .logo img {
+            width: 100px;
+            height: 100px;
+            margin: 0 2em 0 0;
+            float: left;
+        }
+        .main-menu {
+            margin-left: 224px;
+            font-weight: 400;
+        }
+        .main-menu ul li {
+            list-style-type: none;
+            display: inline-block;
+            float: left;
+            padding-left: 25px;
+            padding-right: 25px;
+            border-left: 1px solid rgba(202, 204, 202, 0.6);
+            line-height: 100px;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+        .main-menu ul li a {
+            text-decoration: none;
+            color: #888;
+        }
+        .main-menu ul li a:hover {
+            color: #9ed034;
+        }
+        .main-menu ul li.active {
+            background: #9ed034;
+            border: none;
+        }
+        .main-menu ul li.active a {
+            color: #fff;
+        }
+
+        /*Main*/
+        main {
+            font-family: Arial, Helvetica, sans-serif; /* Apply the font to all text within the main tag */
+            margin-left: 90px; /* Add spacing from the left side of the page */
+            margin-right: 90px;
+            margin-top: 100px;
+            line-height: 1.6; /* Add spacing between all lines */
+        }
+
+        h2 {
+            font-size: 40px; /* Make the font bigger */
+            color: #9ed034; /* Change font color */
+        }
+
+        h3 {
+            font-size: 25px; /* Make the font slightly smaller than h2 */
+            color: black; /* Keep the font color black */
+        }
+        
+        p {
+            font-size: 18px;  
+        }
+
+        /*Partners*/
+        section {
+            margin-top: 150px;
+            width: 100%;
+            background-color: #4288c3;
+        }
+        section #partners {
+            width: 1200px;
+            padding: 2em 0 2em 0;
+            margin: 0 auto;
+            text-align: center;
+        }
+        section #partners .partner {
+            display: inline-block;
+            margin: 0 0.75em;
+            padding: 1.3em 1.5em;
+            background-color: #fff;
+            border-radius: 50%;
+        }
+        section #partners .partner img {
+            width: 90px;
+            height: 90px;
+        }
+        /*Footer*/
+        footer {
+            width: 100%;
+            height: 155px;
+            padding-bottom: 1em;
+            background-color: #ecfab8;
+        }
+        footer #nondisclaimer .copy {
+            padding: 3.5em 3.5em 3.5em 13em;
+            float: left;
+            font-size: 0.9em;
+        }
+        footer #nondisclaimer .social {
+            padding: 2.5em;
+            margin-right: 9.25em;
+            float: right;
+        }
+        footer #disclaimer {
+            clear: both;
+        }
+        footer #disclaimer p {
+            font-size: 0.85em;
+            text-align: center;
+        }
+        footer #nondisclaimer .social .fa {
+            padding: 15px;
+            font-size: 15px;
+            width: 15px;
+            text-align: center;
+            text-decoration: none;
+            margin: 0 4px;
+            border-radius: 50%;
+        }
+        footer #nondisclaimer .social .fa:hover {
+            opacity: 0.7;
+        }
+        footer #nondisclaimer .social .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
+        footer #nondisclaimer .social .fa-twitter {
+            background: #55ACEE;
+            color: white;
+        }
+        footer #nondisclaimer .social .fa-instagram {
+            background: #125688;
+            color: white;
+        }
+
+
+        /*Activities*/
+        #activities main h1 {
+            position: relative;
+            background-color: #fff; /* Matches form background */
+            padding: 0 0px; /* Add padding to maintain spacing */
+            display: inline-block; /* Shrink background to fit text */
+            z-index: 1; /* Ensure it appears above the form border */
+            color: #9ed034; 
+            font-size: 40px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 1000px;
+            margin: 4em auto 0 auto;
+        }
+        caption {
+            background: #852b1b;
+            height: 40px;
+            color: #fff;
+            font-size: 1.3em;
+            font-weight: bold;
+            padding-top: 1em;
+        }
+        thead {
+            background: #bde1ff;
+        }
+        tbody {
+            background: #eeffe6;
+            text-align: center;
+        }
+        th, td {
+            width: 225px;
+            height: 75px;
+            vertical-align: middle;
+            border: solid 1px #852b1b;
+        }
+        th:first-child {
+            width: 125px;
+            height: 50px;
+            background: #4977d1;
+            color: #fff;
+        }
+        td:first-child {
+            font-weight: bold;
+            background: #bde1ff;
+        }
+
+        /*table selection*/
+        .selected {
+            background-color: #9ed034;  /* Change background to green */
+            color: white;             /* Change text color to white */
+            font-weight: bold;        /* Make the text bold */
+        }
+
+        #activities main #displaySelected {
+            visibility: hidden;
+            margin: 0 auto;
+            width: 600px;
+            border: 2px solid #9ed034;
+            padding: 0.75em;
+        }
+        #activities main #displaySelected #result, #activities main #displaySelected #sendinfo {
+            display: inline-block;
+            margin: 0;
+        }
+        #activities main #result {
+            min-height: 50px;
+            width: 300px;
+            padding: 0;
+        }
+        #activities main #result h4 {
+            margin-bottom: 1em;
+            font-size: 1.15em;
+        }
+        #activities main #displaySelected #sendinfo input[type="email"] {
+            width: 200px;
+        }
+        
+        
+
+/* Contact Main */
+/* General styles for the main content */
+#contact main {
+    font-family: Arial, Arial, Helvetica, sans-serif;
+    color: #333;
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-top: 100px;
+    line-height: 1.6;
+}
+
+
+
+/* Title style */
+#contact main h1 {
+    position: relative;
+    background-color: #fff; /* Matches form background */
+    padding: 0 0px; /* Add padding to maintain spacing */
+    display: inline-block; /* Shrink background to fit text */
+    z-index: 1; /* Ensure it appears above the form border */
+    color: #9ed034; 
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#contact main p {
+    font-size: 18px;
+    font-weight:100;
+}
+
+/* Contact information section */
+.contactinfo {
+    margin-bottom: 20px;
+}
+
+.contactinfo div {
+    margin: 5px 0;
+}
+
+.contactinfo span:first-child {
+    font-weight: bold;
+    color: black; 
+    font-size: 18px;
+}
+
+.contactinfo span:second-child {
+    color: black; 
+    font-size: 14px;
+}
+
+/* Form container styling */
+form {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff; /* White background for form */
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Fieldset and legend styles */
+fieldset {
+    border: 2px solid #9ed034; /* Lime green outline */
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff; /* Optional: White background for form */
+    margin: 0; /* Align with form */
+}
+
+legend {
+    color: #4977D1; /* Smooth blue color */
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 10px; /* Optional: Slight spacing from the left */
+    padding: 0 10px; /* Add spacing around the text */
+    background-color: #fff; /* Match the background color */
+    border-radius: 4px; /* Optional: Smooth border for legend */
+    line-height: 1.5; /* Center vertically */
+}
+
+
+/* Input fields, textareas, and select boxes */
+input[type="text"], input[type="email"], textarea, select {
+    width: 50%;
+    padding: 8px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Style for textareas */
+textarea {
+    resize: vertical;
+    height: 80px;
+}
+
+.radios {
+    display: flex; /* Flexbox layout for horizontal alignment */
+    align-items: center; /* Vertically center-align question and options */
+    margin-bottom: 15px;
+}
+
+.radios label {
+    margin-right: 15px; /* Add spacing between the question and the options */
+}
+
+.radio-options {
+    display: flex; /* Ensure radio buttons are horizontally aligned */
+    gap: 15px; /* Add spacing between each radio button and its label */
+}
+
+.radio-options label {
+    display: flex; /* Use flexbox to align the button and label horizontally */
+    align-items: center; /* Vertically align the radio button with the text */
+    gap: 5px; /* Add spacing between the button and the label text */
+    margin: 0; /* Remove any extra margins */
+}
+
+
+.radio-options input {
+    margin-right: 5px; /* Space between the button and its text */
+}
+
+
+/* Select menu style */
+.selectmenu {
+    margin-bottom: 15px;
+}
+
+/* Submit button style */
+/* Ensure the button container aligns properly */
+form .button {
+    display: flex; /* Enables flexible alignment */
+    justify-content: flex-end; /* Aligns the button to the right */
+    width: 50%; /* Ensures the container spans the form width */
+    margin-top: 80px; /* Optional: Add space above the button */
+}
+
+/* Submit button style */
+form .button input[type="submit"] {
+    background-color: #4977D1; /* Smooth blue */
+    color: #fff; /* White text */
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+/* Hover effect for the submit button */
+form .button input[type="submit"]:hover {
+    background-color: #375b9b; /* Darker blue on hover */
+}
+
+
+/* Align all elements to the left */
+form label, input, textarea, select {
+    text-align: left;
+    display: block;
+    margin-bottom: 10px; /* Add consistent spacing below form elements */
+}
+
+/* Margin between sections */
+form .textbox, .radios, .selectmenu, .commentbox, .button {
+    margin-bottom: 20px;
+}
+
+/* Ensure the form is the positioned container */
+form {
+    position: relative;
+}
+
+/* Position .randomcode so its right edge aligns with the 50% mark of the form */
+.randomcode {
+    position: absolute;
+    bottom: 120px;      /* Adjust as needed */
+    left: 52%;         /* Start at the 50% mark of the form */
+    transform: translateX(-100%);  /* Shift it left so that its right edge is at left: 50% */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Optional styling for the random code elements */
+.randomcode input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.randomcode #codes {
+    display: inline-block;    /* Makes the element behave like a box */
+    padding: 8px 12px;        /* Adds space inside the box */
+    border: 1px solid #4977D1;/* Gives the box a border with the same blue color */
+    border-radius: 4px;       /* Rounds the corners of the box */
+    background-color: #f9f9f9;/* Optional: light background color for contrast */
+    font-size: 16px;
+    font-weight: bold;
+    color: #4977D1;
+    margin: 0;
+}
+
+
+/*Cliff Photos - Cliff Page*/
+/* Centering Container */
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* Full viewport height */
+}
+
+/* Photo Grid */
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 30px; /* Spacing between images */
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+/* Photo Container */
+.photo-container {
+    display: flex;
+    flex-direction: column; /* Stacks the banner above the photo */
+    align-items: center;
+    overflow: hidden; /* Ensures elements don't overflow outside the container */
+    border-radius: 8px; /* Optional: Rounds corners of the entire container */
+}
+
+/* Title Banner */
+.title-banner {
+    width: 100%; /* Full width of the container */
+    background: #852b1b; /* Dark red background */
+    color: #fff; /* White text */
+    text-align: center;
+    padding: 8px 0; /* Adds vertical padding for the text */
+    font-size: 1rem; /* Adjust font size as needed */
+    font-weight: bold; /* Makes the text bold */
+    border-radius: 8px 8px 0 0; /* Rounds the top corners */
+}
+
+/* Photo */
+.photo-container img {
+    width: 100%; /* Full width of the container */
+    height: auto;
+    border-radius: 0 0 8px 8px; /* Rounds the bottom corners only */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a shadow effect */
+}
+
+
+
+/* Home Section: Clock Styles */
+#timeofday {
+    font-family: Arial, Helvetica, sans-serif; /* Font */
+    color: #3a3a3a; /* Text color */
+    text-align: center; /* Center align text */
+    padding: 20px; /* Add some padding */
+    background: linear-gradient(0deg, #fbd78b 0%, #76d5f5 100%); /* Gradient background */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for a polished look */
+    margin: 0 auto; /* Ensure no margin around the section */
+    width: 100%;
+    max-width: 1414px;
+
+}
+
+#timeofday span {
+    display: inline-block; /* Stack the text elements */
+}
+
+#timeofday #clock {
+    color: #125688; /* Highlight clock text in blue */
+    font-size: 1.0em; /* Larger font for the clock */
+    font-weight: normal; /* Bold font for emphasis */
+}
+
+
+/*lightbox on cliff page*/
+/* --- Lightbox Overlay --- */
+#lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);  /* Semi-transparent dark background */
+    z-index: 9999;
+    padding: 10px;  /* 20px margin from the edge of the screen */
+    box-sizing: border-box;
+    
+    /* Use flexbox to center the image container */
+    display: none;           /* Hidden by default */
+    justify-content: center;
+    align-items: center;
+}
+
+
+  
+/* --- Image Container with White Borders --- */
+.lightbox-img-container {
+    position: relative;
+    /* White border: 10px on top/bottom, 5px on left/right */
+    border-top: 20px solid #fff;
+    border-bottom: 20px solid #fff;
+    border-left: 15px solid #fff;
+    border-right: 15px solid #fff;
+}
+  
+/* --- Enlarged Image Styling --- */
+.lightbox-img-container img {
+    display: block;
+    /* 
+       Available width: viewport width minus (2×20px lightbox padding + 2×5px for left/right borders)
+       = 100vw - 40px - 10px = calc(100vw - 50px)
+       
+       Available height: viewport height minus (2×20px lightbox padding + 2×10px for top/bottom borders)
+       = 100vh - 40px - 20px = calc(100vh - 60px)
+    */
+    max-width: calc(100vw - 50px);
+    max-height: calc(100vh - 60px);
+}
+  
+/* --- Close Button --- */
+.lightbox-img-container .close {
+    position: absolute;
+    top: -10px;   /* 10px down from the top edge of the container */
+    right: 0px;  /* 5px in from the right edge of the container */
+    background: #fff;
+    color: #000;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 0;
+    padding: 0;
+    cursor: pointer;
+    border-radius: 0%;
+}
+  
+  
+  
+
+

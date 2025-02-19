@@ -6,9 +6,36 @@ header {
 }
 
 #home header {
-    background: no-repeat lightgrey url(images/cliff_ocean.jpg);
-    background-size: 1500px;
+    background: lightgrey url(images/cliff_ocean.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
 }
+
+
+#cliffs header {
+    background: no-repeat lightgrey url(images/forest_cliff.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+}
+
+#activities header {
+    background: no-repeat lightgrey url(images/runfly.jpg);
+    background-size: cover;
+    background-position: top center;
+    height: 50vh;
+}
+
+#contact header {
+    background: no-repeat lightgrey url(images/cliff_rock.jpg);
+    background-size: cover;
+    background-position: top center;
+    height: 50vh;
+}
+
+
+  
 
 /* Navbar Styles */
 .navbar {
@@ -448,4 +475,227 @@ main.content-container {
 
 
 
+/*Cliff Photos - Cliff Page*/
 
+/* Centering Container */
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* Full viewport height on larger screens */
+}
+
+/* Photo Grid */
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns on larger screens */
+    gap: 30px; /* Spacing between images */
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+/* Photo Container */
+.photo-container {
+    display: flex;
+    flex-direction: column; /* Stacks the banner above the photo */
+    align-items: center;
+    overflow: hidden; /* Ensures elements don't overflow outside the container */
+    border-radius: 8px; /* Optional: Rounds corners of the entire container */
+}
+
+/* Title Banner */
+.title-banner {
+    width: 100%; /* Full width of the container */
+    background: #852b1b; /* Dark red background */
+    color: #fff; /* White text */
+    text-align: center;
+    padding: 8px 0; /* Adds vertical padding for the text */
+    font-size: 1rem; /* Adjust font size as needed */
+    font-weight: bold; /* Makes the text bold */
+    border-radius: 8px 8px 0 0; /* Rounds the top corners */
+}
+
+/* Photo */
+.photo-container img {
+    width: 100%; /* Full width of the container */
+    height: auto;
+    border-radius: 0 0 8px 8px; /* Rounds the bottom corners only */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a shadow effect */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 992px) {
+    .center-container {
+        height: auto; /* Allow container to expand with content */
+        padding: 20px 0; /* Optional: Adds vertical spacing */
+    }
+    
+    .photo-grid {
+        grid-template-columns: 1fr; /* Stack images in a single column */
+    }
+}
+
+@media (max-width: 992px) {
+    .photo-grid {
+        grid-template-columns: 1fr; /* Stack images in one column */
+        width: 100%; /* 100% width on smaller screens */
+    }
+}
+
+
+/*lightbox on cliff page*/
+/* --- Lightbox Overlay --- */
+#lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);  /* Semi-transparent dark background */
+    z-index: 9999;
+    padding: 10px;  /* 20px margin from the edge of the screen */
+    box-sizing: border-box;
+    
+    /* Use flexbox to center the image container */
+    display: none;           /* Hidden by default */
+    justify-content: center;
+    align-items: center;
+}
+
+
+  
+/* --- Image Container with White Borders --- */
+#lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8); /* dark overlay */
+    display: none; /* hidden by default */
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+  }
+  
+
+.lightbox-img-container {
+    position: relative;
+    /* White border: 10px on top/bottom, 5px on left/right */
+    border-top: 20px solid #fff;
+    border-bottom: 20px solid #fff;
+    border-left: 15px solid #fff;
+    border-right: 15px solid #fff;
+}
+  
+/* --- Enlarged Image Styling --- */
+.lightbox-img-container img {
+    display: block;
+    /* 
+       Available width: viewport width minus (2×20px lightbox padding + 2×5px for left/right borders)
+       = 100vw - 40px - 10px = calc(100vw - 50px)
+       
+       Available height: viewport height minus (2×20px lightbox padding + 2×10px for top/bottom borders)
+       = 100vh - 40px - 20px = calc(100vh - 60px)
+    */
+    max-width: calc(100vw - 50px);
+    max-height: calc(100vh - 60px);
+}
+  
+/* --- Close Button --- */
+.lightbox-img-container .close {
+    position: absolute;
+    top: -10px;   /* 10px down from the top edge of the container */
+    right: 0px;  /* 5px in from the right edge of the container */
+    background: #fff;
+    color: #000;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 0;
+    padding: 0;
+    cursor: pointer;
+    border-radius: 0%;
+}
+
+
+/*Activities*/
+#activities main h1 {
+    position: relative;
+    background-color: #fff; /* Matches form background */
+    padding: 0 0px; /* Add padding to maintain spacing */
+    display: inline-block; /* Shrink background to fit text */
+    z-index: 1; /* Ensure it appears above the form border */
+    color: #9ed034; 
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 1000px;
+    margin: 4em auto 0 auto;
+}
+caption {
+    background: #852b1b;
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: bold;
+    caption-side: top;
+    text-align: center;
+}
+thead {
+    background: #bde1ff;
+    text-align: center;
+}
+tbody {
+    background: #eeffe6;
+    text-align: center;
+}
+th, td {
+    width: 225px;
+    height: 75px;
+    vertical-align: middle;
+    border: solid 1px #852b1b;
+}
+th:first-child {
+    width: 125px;
+    height: 50px;
+    background: #4977d1;
+    color: #fff;
+}
+td:first-child {
+    font-weight: bold;
+    background: #bde1ff;
+}
+
+/*table selection*/
+.selected {
+    background-color: #9ed034;  /* Change background to green */
+    color: white;             /* Change text color to white */
+    font-weight: bold;        /* Make the text bold */
+}
+
+#activities main #displaySelected {
+    visibility: hidden;
+    margin: 0 auto;
+    width: 600px;
+    border: 2px solid #9ed034;
+    padding: 0.75em;
+}
+#activities main #displaySelected #result, #activities main #displaySelected #sendinfo {
+    display: inline-block;
+    margin: 0;
+}
+#activities main #result {
+    min-height: 50px;
+    width: 300px;
+    padding: 0;
+}
+#activities main #result h4 {
+    margin-bottom: 1em;
+    font-size: 1.15em;
+}
+#activities main #displaySelected #sendinfo input[type="email"] {
+    width: 200px;
+}
