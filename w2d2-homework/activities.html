@@ -62,55 +62,79 @@
             <p>There are many planned activities at all the cliff sites. Some are scheduled daily, weekly, monthly and yearly. These activities are not however run by the state park and recreational department. They are operated and manage by private vendors but are partners with the state department. Therefore, for schedule inquiries or information, please contact them directly. For a list of activities, please refer to the table below:</p>
 
             <!-- Table Section -->
-            <table>
-                <caption>Activities at the Cliffs</caption>
-                <thead>
-                    <tr>
-                        <th>Activity</th>
-                        <th>West Cliff</th>
-                        <th>North Cliff</th>
-                        <th>East Cliff</th>
-                        <th>South Cliff</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Hiking</td>
-                        <td>College Hikes</td>
-                        <td>Family Fun</td>
-                        <td>Treasure Trails</td>
-                        <td>Canyon Explorer</td>
-                    </tr>
-                    <tr>
-                        <td>Kayak</td>
-                        <td>Western Kayak Meetup</td>
-                        <td>Not Available</td>
-                        <td>Youth Kayaking</td>
-                        <td>Kayak Down</td>
-                    </tr>
-                    <tr>
-                        <td>Skydiving</td>
-                        <td>Seacliff Diving</td>
-                        <td>Sky is the limit</td>
-                        <td>Not Available</td>
-                        <td>Sky Diving for Beginners</td>
-                    </tr>
-                    <tr>
-                        <td>Biking</td>
-                        <td>Bicycle for One</td>
-                        <td>Not Available</td>
-                        <td>Bike Meetup Group</td>
-                        <td>Not Available</td>
-                    </tr>
-                    <tr>
-                        <td>Camping</td>
-                        <td>Youth Camp</td>
-                        <td>Rent a Tent</td>
-                        <td>Campground Adventure</td>
-                        <td>Sunset Camping</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="table-responsive">
+                <table class="table table-bordered text-center">
+                    <caption>Activities at the Cliffs</caption>
+                    <thead>
+                        <tr>
+                            <th>Activity</th>
+                            <th>West Cliff</th>
+                            <th>North Cliff</th>
+                            <th>East Cliff</th>
+                            <th>South Cliff</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Hiking</td>
+                            <td class="clickable">College Hikes</td>
+                            <td class="clickable">Family Fun</td>
+                            <td class="clickable">Treasure Trails</td>
+                            <td class="clickable">Canyon Explorer</td>
+                        </tr>
+                        <tr>
+                            <td>Kayak</td>
+                            <td class="clickable">Western Kayak Meetup</td>
+                            <td>Not Available</td>
+                            <td class="clickable">Youth Kayaking</td>
+                            <td class="clickable">Kayak Down</td>
+                        </tr>
+                        <tr>
+                            <td>Skydiving</td>
+                            <td class="clickable">Seacliff Diving</td>
+                            <td class="clickable">Sky is the Limit</td>
+                            <td>Not Available</td>
+                            <td class="clickable">Sky Diving for Beginners</td>
+                        </tr>
+                        <tr>
+                            <td>Biking</td>
+                            <td class="clickable">Bicycle for One</td>
+                            <td>Not Available</td>
+                            <td class="clickable">Bike Meetup Group</td>
+                            <td>Not Available</td>
+                        </tr>
+                        <tr>
+                            <td>Camping</td>
+                            <td class="clickable">Youth Camp</td>
+                            <td class="clickable">Rent a Tent</td>
+                            <td class="clickable">Campground Adventure</td>
+                            <td class="clickable">Sunset Camping</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Bootstrap Modal -->
+            <div class="modal fade" id="activityModal" tabindex="-1" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalTitle">Activity Details</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body" id="modalContent">
+                            <!-- Activity details will be inserted here -->
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-success" data-dismiss="modal">Back to Activities</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
 
             <div id="displaySelected">
                 <div id="result">
